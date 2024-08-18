@@ -24,7 +24,7 @@
         padding: 0 10px
       }
       .btn{
-        @apply px-5 py-3 rounded-full border border-black text-base font-semibold capitalize mt-4;
+        @apply px-5 py-3 rounded-full border border-black text-base font-semibold capitalize;
       }
       .btn-one{
         @apply bg-black text-white;
@@ -48,24 +48,28 @@
         @apply text-sm text-primary font-semibold uppercase leading-normal;
       }
       .nav-link{
-        @apply text-base text-primary  capitalize leading-normal;
+        @apply text-base text-primary font-medium capitalize leading-normal;
       }
      
     }
     </style>
 </head>
 <body class="font-sans">
-    <header>
+    <header class="py-3">
        <div class="container">
-        <nav>
+        <nav class="flex flex-col items-start gap-y-9 lg:gap-y-0 lg:flex-row lg:justify-between lg:items-center">
           <div class="logo">
             <a href="#" class="text-4xl font-medium text-black ">CoWork</a>
           </div>
-          <ul>
-            <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Pricing</a></li>
-            <li><a href="#" class="nav-link">Bloc</a></li>
-            <li><a href="#" class="nav-link">Event</a></li>
+          <ul class="flex flex-col w-full lg:w-fit lg:flex-row lg:items-center gap-6">
+            <li><a href="#" class="nav-link font-semibold lg:font-normal">About</a></li>
+            <li><a href="#" class="nav-link font-semibold lg:font-normal">Pricing</a></li>
+            <li><a href="#" class="nav-link font-semibold lg:font-normal">Bloc</a></li>
+            <li><a href="#" class="nav-link font-semibold lg:font-normal">Event</a></li>
+            <li class="space-x-3 self-end">
+              <button class="btn btn-two">Log In</button>
+              <button class="btn btn-one">Sing Up</button>
+            </li>
           </ul>
         </nav>
        </div>
