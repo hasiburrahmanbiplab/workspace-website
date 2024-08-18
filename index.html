@@ -45,16 +45,16 @@
         @apply bg-transparent text-primary;
       }
       .section-h1{
-        @apply text-7xl font-bold text-primary leading-tight;
+        @apply font-bold text-primary !leading-tight;
       }
       .section-h2{
-        @apply text-5xl font-semibold text-primary leading-tight capitalize; 
+        @apply font-semibold text-primary leading-tight capitalize; 
       }
       .section-h3{
-        @apply text-2xl font-semibold text-primary leading-tight;
+        @apply font-semibold text-primary leading-tight;
       }
       .section-p{
-        @apply text-base text-primary leading-normal py-4;
+        @apply text-base text-primary !leading-7 py-4;
       }
       .section-span{
         @apply text-sm text-primary font-semibold uppercase leading-normal;
@@ -88,13 +88,13 @@
     <!-- banner section  -->
      <section id="banner" class="my-16">
       <div class="container">
-        <div class="banner-container grid grid-cols-2 gap-6 items-center">
-          <div class="banner-text">
-            <h1 class="section-h1">Elevate Your Workspace with <span class="cowork-span relative">Cowork</span></h1>
-            <p class="section-p">Welcome to Cowork – where innovation meets collaboration in the heart  of productivity! Unleash 🚀 your potential in our thoughtfully designed coworking spaces, tailored to inspire creativity and foster connections.</p>
+        <div class="banner-container grid grid-cols-1 gap-8  justify-center items-center md:grid-cols-2  ">
+          <div class="banner-text max-w-[450px] m-auto flex flex-col justify-center items-center  md:max-w-full md:items-start">
+            <h1 class=" text-4xl text-center section-h1 md:text-start lg:text-6xl">Elevate Your Workspace with <span class="cowork-span relative">Cowork</span></h1>
+            <p class="section-p text-center md:text-start">Welcome to Cowork – where innovation meets collaboration in the heart  of productivity! Unleash 🚀 your potential in our thoughtfully designed coworking spaces, tailored to inspire creativity and foster connections.</p>
             <button class="btn btn-one mt-4">Claim Your Spot</button>
           </div>
-          <div class="banner-image">
+          <div class="banner-image bg-">
             <div class="img">
               <img src="assets/banner.png" class="rounded-2xl" alt="banner image">
             </div>
