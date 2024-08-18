@@ -18,6 +18,11 @@
   </script>
     <style type="text/tailwindcss">
     @layer components{
+      .container{
+        margin: 0 auto;
+        border: 1px solid red;
+        padding: 0 10px
+      }
       .btn{
         @apply px-5 py-3 rounded-full border border-black text-base font-semibold capitalize mt-4;
       }
@@ -42,11 +47,28 @@
       .section-span{
         @apply text-sm text-primary font-semibold uppercase leading-normal;
       }
+      .nav-link{
+        @apply text-base text-primary  capitalize leading-normal;
+      }
      
     }
     </style>
 </head>
 <body class="font-sans">
-         <p class="section-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex quo culpa esse, voluptatibus nemo fuga!</p>
+    <header>
+       <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#" class="text-4xl font-medium text-black ">CoWork</a>
+          </div>
+          <ul>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Pricing</a></li>
+            <li><a href="#" class="nav-link">Bloc</a></li>
+            <li><a href="#" class="nav-link">Event</a></li>
+          </ul>
+        </nav>
+       </div>
+    </header>
 </body>
 </html>
