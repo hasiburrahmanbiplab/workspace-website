@@ -10,20 +10,29 @@
       theme: {
         extend: {
           colors: {
-            
+             primary: '#1D1E1C'
           }
         }
       }
     }
   </script>
     <style type="text/tailwindcss">
-        @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
-        }
-      </style>
+    @layer components{
+      .btn{
+        @apply px-5 py-3 rounded-full border border-black text-base font-semibold capitalize mt-4;
+      }
+      .btn-one{
+        @apply bg-black text-white;
+      }
+      .btn-two{
+        @apply bg-transparent text-primary;
+      }
+     
+    }
+    </style>
 </head>
-<body>
+<body class="font-sans">
+
+
 </body>
 </html>
