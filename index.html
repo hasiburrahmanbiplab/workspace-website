@@ -23,8 +23,20 @@
         border: 1px solid red;
         padding: 0 10px
       }
+      .cowork-span::after{
+         content: "";
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         left: 0;
+         top: 0;
+         background: url(/assets/Vector-1.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+      }
       .btn{
-        @apply px-5 py-3 rounded-full border border-black text-base font-semibold capitalize;
+        @apply px-6 py-3 rounded-full border border-black text-base font-semibold capitalize;
       }
       .btn-one{
         @apply bg-black text-white;
@@ -49,8 +61,7 @@
       }
       .nav-link{
         @apply text-base text-primary font-medium capitalize leading-normal;
-      }
-     
+      }    
     }
     </style>
 </head>
@@ -79,7 +90,7 @@
       <div class="container">
         <div class="banner-container grid grid-cols-2 gap-6 items-center">
           <div class="banner-text">
-            <h1 class="section-h1">Elevate Your Workspace with Cowork</h1>
+            <h1 class="section-h1">Elevate Your Workspace with <span class="cowork-span relative">Cowork</span></h1>
             <p class="section-p">Welcome to Cowork – where innovation meets collaboration in the heart  of productivity! Unleash 🚀 your potential in our thoughtfully designed coworking spaces, tailored to inspire creativity and foster connections.</p>
             <button class="btn btn-one mt-4">Claim Your Spot</button>
           </div>
