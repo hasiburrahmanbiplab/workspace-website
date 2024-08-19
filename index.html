@@ -51,7 +51,7 @@
         @apply px-6 py-3 rounded-full border border-black text-base font-semibold capitalize;
       }
       .btn-one{
-        @apply bg-black text-white;
+        @apply bg-black text-white border-none;
       }
       .btn-two{
         @apply bg-transparent text-primary;
@@ -408,6 +408,12 @@
         <div class="footer-container bg-[#1D1E1C] rounded-2xl grid grid-cols-[2fr_1fr_1fr_1fr] p-8">
            <div class="footer-logo">
               <a href="#" class="text-4xl font-medium text-white">CoWork</a>
+              <p class="section-p text-white">Join our newsletter to stay up to date on features and releases.</p>
+              <div class="subscription-form flex items-center justify-between gap-3 my-3">
+                <input type="email" class="focus-visible:outline-none w-full py-3 bg-transparent border-b border-b-slate-300" placeholder="Enter your email" name="" id="">
+                <button class="btn btn-one bg-white text-black border-none">Subscribe</button>
+              </div>
+              <p class="section-p text-white">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
            </div>
         </div>
       </div>
