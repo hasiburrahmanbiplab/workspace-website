@@ -35,6 +35,9 @@
          background-position: center;
          background-size: cover;
       }
+      .choose-card .card .icon::after{
+        z-index: -1;
+      }
       .btn{
         @apply px-6 py-3 rounded-full border border-black text-base font-semibold capitalize;
       }
@@ -134,9 +137,32 @@
     <!-- choose section  -->
      <section id="choose" class="my-12 lg:my-16">
       <div class="container">
-        <div class="choose-container">
+        <div class="choose-container flex flex-col space-y-16">
            <div class="choose-heading text-center">
             <h2 class="flex section-h2 text-3xl justify-center items-center flex-wrap gap-2 lg:text-4xl xl:text-5xl">Why Choose <img src="assets/heading-image-1.png" class="rounded-full hidden sm:block" alt=""> Cowork?</h2>
+           </div>
+           <div class="choose-card grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div class="card flex flex-col items-center text-center max-w-md m-auto lg:max-w-full">
+              <div class="icon w-12 h-12 relative after:content-[''] after:w-[80%] after:h-[80%] after:absolute after:left-[15%] after:top-[15%] after:bg-[#D3F985] after:rounded-full  rounded-full">
+                <img src="assets/choose-1.png" class="w-full h-full" alt="">
+              </div>
+              <h3 class="section-h3 text-2xl mt-2 text-center">Flexible Spaces</h3>
+              <p class="section-p text-center">Whether you're a solopreneur, startup, or an established enterprise, our flexible office solutions cater to your evolving needs</p>
+            </div>
+            <div class="card flex flex-col items-center text-center max-w-md m-auto lg:max-w-full">
+              <div class="icon w-12 h-12 relative after:content-[''] after:w-[80%] after:h-[80%] after:absolute after:left-[15%] after:top-[15%] after:bg-cyan-300 after:rounded-full  rounded-full">
+                <img src="assets/choose-2.png" class="w-full h-full" alt="">
+              </div>
+              <h3 class="section-h3 text-2xl mt-2 text-center">Flexible Spaces</h3>
+              <p class="section-p text-center">Choose a plan that suits your budget and business objectives,and experience the value of a premium coworking space without breaking the bank.</p>
+            </div>
+            <div class="card flex flex-col items-center text-center max-w-md m-auto lg:max-w-full">
+              <div class="icon w-12 h-12 relative after:content-[''] after:w-[80%] after:h-[80%] after:absolute after:left-[15%] after:top-[15%] after:bg-pink-400 after:rounded-full  rounded-full">
+                <img src="assets/choose-3.png" class="w-full h-full" alt="">
+              </div>
+              <h3 class="section-h3 text-2xl mt-2 text-center">Flexible Spaces</h3>
+              <p class="section-p text-center">Whether you prefer the flexibility of a hot desk or the exclusivity of a private office, Cowork offers tailored solutions to suit every working style.</p>
+            </div>
            </div>
         </div>
       </div>
