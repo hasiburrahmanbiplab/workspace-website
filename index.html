@@ -24,7 +24,6 @@
     @layer components{
       .container{
         margin: 0 auto;
-        border: 1px solid red;
         padding: 0 10px
       }
       .cowork-span::after{
@@ -403,13 +402,13 @@
      </section>
     <!-- inovation section -->
      <!-- footer section  -->
-    <footer class=""> 
+    <footer class=" bg-[#1D1E1C] p-8"> 
       <div class="container">
-        <div class="footer-container bg-[#1D1E1C] rounded-2xl grid grid-cols-[2fr_1fr_1fr_1fr] gap-12 p-8">
-           <div class="footer-logo">
+        <div class="footer-container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-12 ">
+           <div class="footer-logo col-span-full lg:col-span-1">
               <a href="#" class="text-4xl font-medium text-white">CoWork</a>
               <p class="section-p text-white">Join our newsletter to stay up to date on features and releases.</p>
-              <div class="subscription-form flex items-center justify-between gap-3 my-3">
+              <div class="subscription-form flex items-center justify-between flex-wrap sm:flex-nowrap gap-3 my-3">
                 <input type="email" class="focus-visible:outline-none w-full py-3 bg-transparent border-b border-b-slate-300" placeholder="Enter your email" name="" id="">
                 <button class="btn btn-one bg-white text-black border-none">Subscribe</button>
               </div>
@@ -442,6 +441,9 @@
               <li><a href="#" class="nav-link text-white">LinkedIn</a></li>
               <li><a href="#" class="nav-link text-white">Youtube</a></li>
             </ul>
+           </div>
+           <div class="copyright col-span-full text-center">
+            <p class="section-p text-white">@ copyright 2024 Hasibur Rahman . All rights reserved</p>
            </div>
         </div>
       </div>
